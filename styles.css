@@ -1,0 +1,93 @@
+
+.poetsen-one-regular{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.open-sans-regular {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#section{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 12%;
+    font-size: x-large;
+}
+
+h1{
+    color: #eee;
+    background-color: #111;
+    border-radius: 5px;
+    border: 5px solid  #111;
+    margin-top: 0;
+    text-align: center;
+}
+
+.h1-white{
+    color: #111;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 5px solid  #eee;
+    margin-top:0;
+    text-align: center;
+}
+
+p{
+    margin: 0 0 2.5% 0;
+}
+
+button{
+    border-bottom: solid 2px #111;
+    border-top: solid 2px #111;
+    border-left: transparent;
+    border-right: transparent;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: medium;
+    padding: 7.5px;
+    width: 120px;
+}
+
+@keyframes forbutton{
+    0% {background-color: transparent;}
+    50% {background-color: #111; color:#eee;}
+    100% {background-color: transparent; }
+}
+
+button:hover{
+    animation-name: forbutton;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+  
+.button-white{
+    border-bottom: solid 2px #eee;
+    border-top: solid 2px #eee;
+    border-left: transparent;
+    border-right: transparent;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: medium;
+    padding: 7.5px;
+    width: 120px;
+}
+
+@keyframes forwhitebutton{
+    0% {background-color: transparent;}
+    50% {background-color:#eee; color: #111}
+    100% {background-color: transparent; }
+}
+
+.button-white:hover{
+    animation-name: forwhitebutton;
+    animation-duration: 1s;
+    cursor: pointer;
+}
