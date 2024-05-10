@@ -1,3 +1,84 @@
+@media (max-width: 480px){
+    #section{
+        font-size: medium;
+        margin-top: 25%;
+    }
+    
+    button{
+        border-radius: 10px;
+        font-size: small;
+        margin-top: 50%;
+        padding: 2px;
+        width: 80px;
+    }
+
+    .button-white{
+        border-radius: 10px;
+        font-size: small;
+        margin-top: 50%;
+        padding: 2px;
+        width: 80px;
+    }
+
+    .open-sans-regular{
+        font-weight: 200;
+    }
+}
+
+@media (min-width: 480.1px) and (max-width: 2500px) {
+    #section{
+        font-size: x-large;
+        margin-top: 12%;
+    }
+    button{
+        border-radius: 15px;
+        font-size: medium;
+        margin-top: 2%;
+        padding: 7.5px;
+        width: 120px;
+    }
+
+    .button-white{
+        border-radius: 15px;
+        font-size: medium;
+        padding: 7.5px;
+        width: 120px;
+    }
+
+    .open-sans-regular{
+        font-weight: 400;
+    }
+}
+
+button:hover{
+    color:#eee;
+    cursor: pointer;
+}
+
+button{
+    border-bottom: solid 2px #111;
+    border-top: solid 2px #111;
+    border-left: transparent;
+    border-right: transparent;
+    background-color: transparent;
+}
+
+.colorTransition{
+    transition: color 1s linear;
+}
+
+.button-white:hover{
+    color:#111;
+    cursor: pointer;
+}
+
+.button-white{
+    border-bottom: solid 2px #eee;
+    border-top: solid 2px #eee;
+    border-left: transparent;
+    border-right: transparent;
+    background-color: transparent;
+}
 
 .poetsen-one-regular{
     font-family: "Poetsen One", sans-serif;
@@ -8,7 +89,6 @@
 .open-sans-regular {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -18,8 +98,7 @@
     display:flex;
     flex-flow: column wrap;
     align-items: center;
-    margin-top: 12%;
-    font-size: x-large;
+    height: auto;
 }
 
 h1{
@@ -41,53 +120,5 @@ h1{
 }
 
 p{
-    margin: 0 0 2.5% 0;
-}
-
-button{
-    border-bottom: solid 2px #111;
-    border-top: solid 2px #111;
-    border-left: transparent;
-    border-right: transparent;
-    border-radius: 3px;
-    background-color: transparent;
-    font-size: medium;
-    padding: 7.5px;
-    width: 120px;
-}
-
-@keyframes forbutton{
-    0% {background-color: transparent;}
-    50% {background-color: #111; color:#eee;}
-    100% {background-color: transparent; }
-}
-
-button:hover{
-    animation-name: forbutton;
-    animation-duration: 1s;
-    cursor: pointer;
-}
-  
-.button-white{
-    border-bottom: solid 2px #eee;
-    border-top: solid 2px #eee;
-    border-left: transparent;
-    border-right: transparent;
-    border-radius: 3px;
-    background-color: transparent;
-    font-size: medium;
-    padding: 7.5px;
-    width: 120px;
-}
-
-@keyframes forwhitebutton{
-    0% {background-color: transparent;}
-    50% {background-color:#eee; color: #111}
-    100% {background-color: transparent; }
-}
-
-.button-white:hover{
-    animation-name: forwhitebutton;
-    animation-duration: 1s;
-    cursor: pointer;
+    margin: 2.5% 0 5% 0;
 }
